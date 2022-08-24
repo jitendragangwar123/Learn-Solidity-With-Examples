@@ -40,3 +40,12 @@ contract Escrow {
         return address(this).balance;
     }
 }
+
+
+/*
+1.Should deposit fund.
+2.Should not deposit if transfer exceed total escrow amount.
+3.Should not deposit if not sending from payer.
+4.Should not release if full amount not received.
+5.Should not release if not thirdParty.
+*/
