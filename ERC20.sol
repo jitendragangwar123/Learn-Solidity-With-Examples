@@ -12,7 +12,7 @@ contract MyToken is ERC20{
         require(msg.sender==admin,"Only Owner");
         _mint(to,amount);
     }
-
+//burn the token
     function burn(uint amount) external{
          _burn(msg.sender,amount);
     }
