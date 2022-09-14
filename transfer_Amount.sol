@@ -12,6 +12,7 @@ contract Day4 {
             to[i].transfer(amount[i]);
         }
     }
+    //define modifier
     modifier ownerOnly{
         require (msg.sender==owner);
         _;
