@@ -30,7 +30,7 @@ contract Day6 {
 }
 
 
-# second Method 
+//Second Method 
 contract Day6 {
       string public concanatedString;
  
