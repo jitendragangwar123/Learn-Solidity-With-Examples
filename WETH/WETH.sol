@@ -8,6 +8,7 @@ contract WETH is ERC20{
     //Deposit Event
     event Deposit(address indexed account,uint amount);
     //Withdraw Event
+    
     event Withdraw(address indexed account,uint amount);
 
     constructor() ERC20("Wrapped Ether","WETH"){}
@@ -30,6 +31,6 @@ contract WETH is ERC20{
     }
 }
 
-//WETH => It is an ERC-20 token. 
+//WETH => It is an ERC20 Token. 
         //It facilitate ether exchange for other tokens ERC-20.
         //It called as Wrapped Ether.
