@@ -11,7 +11,7 @@ contract MyToken is ERC721, ERC721Enumerable, ERC721URIStorage{
     
 
     Counters.Counter private _tokenIdCounter;
-    uint256 MAX_SUPPLY=1000;
+    uint256 MAX_SUPPLY=10000000000;
 
     constructor() ERC721("MyToken", "JAY") {}
 
