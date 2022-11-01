@@ -5,10 +5,11 @@ This is the [Blockchain-Roadmap Link](https://docs.google.com/document/d/19vNRer
 
 
 ```shell
-The standard in the Solidity community is to use a format called ###natspec, which looks like this:
+natspec:-
+      The standard in the Solidity community is to use a format called natspec, which looks like this:-
 
 /// @title A contract for basic math operations
-/// @author H4XF13LD MORRIS 💯💯😎💯💯
+/// @author Jitendra Gangwar
 /// @notice For now, this contract just adds a multiply function
 contract Math {
   /// @notice Multiplies 2 numbers together
@@ -21,11 +22,12 @@ contract Math {
     z = x * y;
   }
 }
-@title and @author are straightforward.
 
-@notice explains to a user what the contract / function does. @dev is for explaining extra details to developers.
+:- @title and @author are straightforward.
+:- @notice explains to a user what the contract / function does. 
+:- @dev is for explaining extra details to developers.
+:- @param and @return are for describing what each parameter and return value of a function are for.
 
-@param and @return are for describing what each parameter and return value of a function are for.
-
-Note that you don't always have to use all of these tags for every function — all tags are optional. But at the very least, leave a @dev note explaining what each function does.
+Note that you don't always have to use all of these tags for every function — all tags are optional. 
+But at the very least, leave a @dev note explaining what each function does.
 ```
