@@ -14,9 +14,6 @@ contract CheckEtherUnits {
     bool public isOneEther = 1 ether == 1e18;
 }
 
-
-
-
 // assert(1 wei == 1);
 // assert(1 gwei == 1e9);
 // assert(1 ether == 1e18);
