@@ -18,7 +18,7 @@ contract RVToken is ERC20, ERC721Holder, Ownable {
     constructor(address _nft) ERC20("RVToken", "RVT") {
         nft=IERC721(_nft);
     }
-
+    // function to stake the token
     function stake(uint256 tokenId) external{
         nft.safeTransferFrom(msg.sender,address(this),tokenId);
         tokenOwnerOf[tokenId]=msg.sender;
