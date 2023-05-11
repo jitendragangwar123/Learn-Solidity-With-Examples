@@ -5,7 +5,6 @@ import "./IERC20.sol";
 contract StakingRewards {
     IERC20 public immutable stakingToken;
     IERC20 public immutable rewardsToken;
-
     address public owner;
 
     // Duration of rewards to be paid out (in seconds)
@@ -47,7 +46,6 @@ contract StakingRewards {
             rewards[_account] = earned(_account);
             userRewardPerTokenPaid[_account] = rewardPerTokenStored;
         }
-
         _;
     }
 
@@ -62,8 +60,7 @@ contract StakingRewards {
 
         return
             rewardPerTokenStored +
-            (rewardRate * (lastTimeRewardApplicable() - updatedAt) * 1e18) /
-            totalSupply;
+            (rewardRate * (lastTimeRewardApplicable() - updatedAt) * 1e18) /totalSupply;
     }
 
     function stake(uint _amount) external updateReward(msg.sender) {
@@ -104,7 +101,7 @@ contract StakingRewards {
         external
         onlyOwner
         updateReward(address(0))
-    {
+        {
         if (block.timestamp >= finishAt) {
             rewardRate = _amount / duration;
         } else {
