@@ -1,11 +1,11 @@
 ## Learn-Solidity-With-Examples
-This repository contains various smart contract examples built using Solidity. These examples are designed to showcase different functionalities, use cases, and features of smart contracts on the Ethereum blockchain. Developers and enthusiasts can explore these contracts to gain a better understanding of how to create, deploy, and interact with smart contracts for a wide range of applications and scenarios.
+- This repository contains various smart contract examples built using Solidity. These examples are designed to showcase different functionalities, use cases, and features of smart contracts on the Ethereum blockchain. Developers and enthusiasts can explore these contracts to gain a better understanding of how to create, deploy, and interact with smart contracts for a wide range of applications and scenarios.
       
 ## Blockchain-Roadmap
 [Blockchain-Roadmap Link](https://docs.google.com/document/d/19vNRerdEXhu3e8nsilW_Au4D9MRXqHaOWAGCKgXxwPc/edit?usp=sharing).
 
 #### natspec:-
-The standard in the Solidity community is to use a format called natspec, which looks like this:-
+- The standard in the Solidity community is to use a format called natspec, which looks like this:-
 ```shell
 /**
  * @title A contract for basic math operations
@@ -21,7 +21,7 @@ contract Math {
    * @dev This function does not currently check for overflows
    */
   function multiply(uint x, uint y) returns (uint z) {
-    // This is just a normal comment, and won't get picked up by natspec
+    // This is just a normal comment, and wont get picked up by natspec
     z = x * y;
   }
 }
