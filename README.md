@@ -34,10 +34,11 @@ contract Math {
   }
 }
 ```
+```shell
 - @title and @author are straightforward.
 - @notice explains to a user what the contract / function does. 
 - @dev is for explaining extra details to developers.
 - @param and @return are for describing what each parameter and return value of a function are for.
-
+```
 - Note that you don't always have to use all of these tags for every function — all tags are optional. 
 But at the very least, leave a @dev note explaining what each function does.
