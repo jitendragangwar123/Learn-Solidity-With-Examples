@@ -8,7 +8,7 @@ contract Example {
         uint number;
         string description;
     }
-    
+
     // create the instance for structure
     Counter counter;
     
@@ -34,8 +34,13 @@ contract Example {
         counter.number -= 1;
     }
     
-    // get the current counter value
+    // to get the current counter value
     function get_counter_value() external view returns(uint) {
         return counter.number;
+    }
+
+    // to get the description 
+    function get_description() external view returns (string memory){
+        return counter.description;
     }
 }
