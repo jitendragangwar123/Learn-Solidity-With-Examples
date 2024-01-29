@@ -23,14 +23,14 @@ contract Escrow {
         require(msg.sender == payer, "Sender must be the payer.");
         require(
             address(this).balance <= amount,
-            "Can't send more than escrow amount."
+            "Can not send more than escrow amount."
         );
     }
 
     function release() public {
         require(
             address(this).balance == amount,
-            "Can't release funds before full amount is sent."
+            "Can not release funds before full amount is sent."
         );
         require(payee == thirdParty, "Only thirdParty can release funds.");
         payee.transfer(amount);
