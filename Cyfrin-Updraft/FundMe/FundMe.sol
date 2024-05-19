@@ -8,7 +8,7 @@ contract FundMe {
     function fund() public payable {
         require(
             getConversionRate(msg.value) >= minimumUsd,
-            "didn't send enough eth"
+            "did not send enough eth"
         ); //1e18=1ETH
     }
 
