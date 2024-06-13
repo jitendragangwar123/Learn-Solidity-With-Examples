@@ -13,7 +13,7 @@ contract Lottery {
     error Lottery_NotEnoughEthSent();
 
     uint256 private immutable i_entranceFee;
-   //  @dev duration of the lottery in seconds
+    //@dev duration of the lottery in seconds
     uint256 private immutable i_interval;
     address payable[] private s_players;
     uint256 private s_lastTimeStamp;
@@ -27,6 +27,7 @@ contract Lottery {
         s_lastTimeStamp=block.timestamp;
     }
 
+    // function to enter the game
     function enterRaffle() external payable {
         if (msg.value < i_entranceFee) {
             revert Lottery_NotEnoughEthSent();
