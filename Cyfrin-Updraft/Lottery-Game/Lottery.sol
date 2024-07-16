@@ -35,13 +35,13 @@ contract Lottery {
         s_players.push(payable(msg.sender));
         emit EnterRaffle(msg.sender);
     }
-
+   // function to pick the winner
     function pickWinner() external {
         if((block.timestamp-s_lastTimeStamp) < i_interval){
             revert();
         }
     }
-
+   // function to get entrance fee
     function getEntranceFee() external view returns (uint256) {
         return i_entranceFee;
     }
