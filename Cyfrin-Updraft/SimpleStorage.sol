@@ -1,3 +1,19 @@
+/*
+data storage types in solidity :-
+    1. Stack
+    2. Memory
+    3. Storage
+    4. Calldata
+    5. Code
+    6. Logs
+*/
+
+/*
+ storage :- data stored permanently.
+ memory :- memory have temporary data that can be modified.
+ calldata :- calldata also have the temporary data that can not be modified.
+*/
+
 // SPDX-License-Identifier:MIT
 pragma solidity 0.8.18;
 
@@ -25,19 +41,3 @@ contract SimpleStorage {
         return listOfPeople;
     }
 }
-
-/*
-data storage types in solidity :-
-    1. Stack
-    2. Memory
-    3. Storage
-    4. Calldata
-    5. Code
-    6. Logs
-*/
-
-/*
- storage :- data stored permanently.
- memory :- memory have temporary data that can be modified.
- calldata :- calldata also have the temporary data that can not be modified.
-*/
